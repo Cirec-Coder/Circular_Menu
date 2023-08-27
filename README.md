@@ -7,3 +7,5 @@
 
 
 <img src="https://github.com/Cirec-Coder/Circular_Menu/blob/main/demo.gif" />
+
+ - En résumé, ce code gère un effet de menu animé en utilisant des transformations CSS, des classes CSS et des écouteurs d'événements. Lorsque vous cliquez sur le bouton de menu, les boutons du menu apparaissent ou disparaissent en se déplaçant en cercle tout en subissant des transformations d'échelle. Les boutons peuvent également être agrandis momentanément lorsque la souris passe sur eux.
