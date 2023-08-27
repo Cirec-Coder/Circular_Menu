@@ -1,0 +1,142 @@
+@import "./socialMediaColors";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(46, 44, 45, 1) 0%, 
+    rgba(66, 64, 67, 1) 100%);
+}
+
+h1 {
+    padding-top: 2rem;
+    font-family: 'Times New Roman', serif;
+    font-size: 8vw;
+    filter: drop-shadow(1px 1px 4px white);
+}
+
+// Menu circulaire 
+
+.menu {
+    margin-top: 2rem;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    .menu-btn {
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        line-height: 40px;
+        font-weight: 900;
+        text-decoration: none;
+        color: white;
+        top: 50%;
+        left: 50%;
+        cursor: pointer;
+        transition: all 0.25s ease-in-out;
+        border: 2px solid rgba(235, 233, 233, 0.519);
+        filter: drop-shadow(2px 2px 2px rgba(146, 146, 146, 0.9));
+        user-select: none;
+    }
+
+
+    .btn-one {
+        background-color: $github;
+    }
+
+    .btn-two {
+        background-color: $linkedin;
+    }
+
+    .btn-three {
+        background-color: $facebook;
+    }
+
+    .btn-four {
+        background-color: $twitter;
+    }
+
+    .btn-five {
+        background-color: $instagrampurple;
+        background: linear-gradient(190deg, $instagramblue 20%, $instagrampurple 20%, 
+        $instagramorange 75%, $instagramyellow 100%);
+        }
+
+    .btn-six {
+        background-color: $tiktokblack;
+    }
+
+
+    .bar {
+        position: relative;
+        display: block;
+        width: 18px;
+        height: 3px;
+        background: white;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 3px;
+        transition: all .25s ease-in-out;
+
+        &::before,
+        &::after {
+            content: "";
+            width: 18px;
+            height: 3px;
+            position: absolute;
+            left: 0;
+            background: white;
+            border-radius: 3px;
+            transition: all .25s ease-in-out;
+        }
+
+        &::before {
+            transform: translateY(-6px);
+        }
+
+        &::after {
+            transform: translateY(6px);
+        }
+
+    }
+
+    .main-btn {
+        background-color: rgb(236, 158, 86);
+        transform: scale(1.5);
+
+        &.active {
+            transform: scale(1.2);
+
+            .bar {
+                width: 0;
+                background: transparent;
+
+                &::before {
+                    left: -8px;
+                    transform: rotate(45deg);
+                }
+
+                &::after {
+                    left: -8px;
+                    transform: rotate(-45deg);
+                }
+
+            }
+        }
+    }
+
+}

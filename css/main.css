@@ -1,0 +1,120 @@
+/**
+ * Sass Variables 
+ * Social Media Brand Colors 
+ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(90deg, rgb(46, 44, 45) 0%, rgb(66, 64, 67) 100%);
+}
+
+h1 {
+  padding-top: 2rem;
+  font-family: "Times New Roman", serif;
+  font-size: 8vw;
+  filter: drop-shadow(1px 1px 4px white);
+}
+
+.menu {
+  margin-top: 2rem;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.menu .menu-btn {
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 40px;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  border: 2px solid rgba(235, 233, 233, 0.519);
+  filter: drop-shadow(2px 2px 2px rgba(146, 146, 146, 0.9));
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.menu .btn-one {
+  background-color: #333;
+}
+.menu .btn-two {
+  background-color: #0a66c2;
+}
+.menu .btn-three {
+  background-color: #1877f2;
+}
+.menu .btn-four {
+  background-color: #1da1f2;
+}
+.menu .btn-five {
+  background-color: #7232bd;
+  background: linear-gradient(190deg, #4c5fd7 20%, #7232bd 20%, #f46f30 75%, #ffdc7d 100%);
+}
+.menu .btn-six {
+  background-color: #010101;
+}
+.menu .bar {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 3px;
+  background: white;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 3px;
+  transition: all 0.25s ease-in-out;
+}
+.menu .bar::before, .menu .bar::after {
+  content: "";
+  width: 18px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.25s ease-in-out;
+}
+.menu .bar::before {
+  transform: translateY(-6px);
+}
+.menu .bar::after {
+  transform: translateY(6px);
+}
+.menu .main-btn {
+  background-color: rgb(236, 158, 86);
+  transform: scale(1.5);
+}
+.menu .main-btn.active {
+  transform: scale(1.2);
+}
+.menu .main-btn.active .bar {
+  width: 0;
+  background: transparent;
+}
+.menu .main-btn.active .bar::before {
+  left: -8px;
+  transform: rotate(45deg);
+}
+.menu .main-btn.active .bar::after {
+  left: -8px;
+  transform: rotate(-45deg);
+}/*# sourceMappingURL=main.css.map */
